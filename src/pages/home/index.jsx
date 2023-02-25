@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-import { Header } from "../../components/Header";
+import { Header } from "../../components/header";
+import { Option } from "../../components/option";
 
-class Home extends Component {
+export class Home extends Component {
   render() {
     return (
       <>
         <Header />
+        <Option />
       </>
     );
   }
 }
-
-export default Home;
