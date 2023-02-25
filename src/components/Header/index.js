@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import { HeaderContent, HeaderWratter, Li, Ul } from "./index.style";
+import { HeaderContent, HeaderWratter, Li, LoginIconStyle, LogoIconStyle, Ul } from "./index.style";
 import {Container} from '../../global.styles'
+import LoginIcon from '../../assets/icons/login.svg'
+import LogoIcon from '../../assets/icons/logo.svg'
 
 export class Header extends Component {
   render() {
@@ -8,7 +10,7 @@ export class Header extends Component {
 
     <Container>
         <HeaderContent>
-            <span>Logo</span>
+            <LogoIconStyle href="http:#"><img src={LogoIcon} alt="logo" /></LogoIconStyle>
             <Ul>
                 <Li>
                     <a href="http:#">Home</a>
@@ -20,7 +22,7 @@ export class Header extends Component {
                     <a href="http:#">Contacts</a>
                 </Li>
             </Ul>
-            <button>Login</button>
+            <button><LoginIconStyle src={LoginIcon} alt="img" /></button>
         </HeaderContent>
     </Container>
 

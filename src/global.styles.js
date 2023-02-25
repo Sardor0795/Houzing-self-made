@@ -39,11 +39,25 @@ export const GlobalStyles = createGlobalStyle`
     color: #fff;
   }
 
+  a, button {
+    transition: opacity 0.3s ease;
+    :active {
+        transform: translateY(2px);
+    }
+    :hover {
+        opacity: 0.6;
+    }
+  }
+
+  button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
 `;
 
-// export const toFormat = styled.div`
-
-// `;
+export const toFormat = styled.div``;
 
 export const Container = styled.div`
   color: #fff;

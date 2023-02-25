@@ -24,3 +24,13 @@ export const Ul = styled.ul`
 export const Li = styled.li`
   margin-right: ${({ last }) => (!last ? "64px" : 0)};
 `;
+
+export const LoginIconStyle = styled.img`
+  width: 24px;
+  height: 24px;
+`;
+
+export const LogoIconStyle = styled.a`
+  width: 117px;
+  height: 36px;
+`;
