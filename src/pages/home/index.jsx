@@ -8,7 +8,6 @@ export class Home extends Component {
       <>
         <Header />
         <Option />
-        
       </>
     );
   }
