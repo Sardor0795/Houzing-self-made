@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { Header } from "../components/Header";
+import Home from "../pages/home";
 
 export class Root extends Component {
   render() {
-    return <Header />;
+    return <Home />;
   }
 }
