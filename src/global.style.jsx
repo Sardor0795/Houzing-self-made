@@ -59,6 +59,28 @@ export const GlobalStyles = createGlobalStyle`
     cursor: pointer;
   }
 
+  /* Body scroll */
+
+  body.scroll-close::-webkit-scrollbar {
+    width: 0;
+  }
+
+  body::-webkit-scrollbar {
+    width: 8px; /* Mostly for vertical scrollbars */
+    border-radius: 2px;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    /* Foreground */
+    background: #0D263B;
+    border-radius: 2px;
+  }
+
+  body::-webkit-scrollbar-track {
+    /* Background */
+    background: rgba(225, 220, 220, 0.845);
+    border-radius: 2px;
+  }
 `;
 
 export const toFormat = styled.div``;
