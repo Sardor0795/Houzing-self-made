@@ -17,18 +17,18 @@ export class Header extends Component {
       <HeaderWratter>
         <Container>
           <HeaderContent>
-            <LogoIconStyle href="h#">
+            <LogoIconStyle href="!#">
               <img src={LogoIcon} alt="logo" />
             </LogoIconStyle>
             <Ul>
               <Li>
-                <a href="h#">Home</a>
+                <a href="!#">Home</a>
               </Li>
               <Li>
-                <a href="h#">Properties</a>
+                <a href="!#">Properties</a>
               </Li>
               <Li last>
-                <a href="h#">Contacts</a>
+                <a href="!#">Contacts</a>
               </Li>
             </Ul>
             <button>
