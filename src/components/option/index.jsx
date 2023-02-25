@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import { Container } from "../../global.styles";
+import { Container } from "../../global.style";
 import {
   AdvancedBtn,
   OptionMenu,
   OptionWrapper,
   SearchAddresInput,
   SearchBtn,
-} from "./index.style";
+} from "./style";
 
 export class Option extends Component {
   render() {

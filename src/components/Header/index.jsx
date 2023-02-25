@@ -6,8 +6,8 @@ import {
   LoginIconStyle,
   LogoIconStyle,
   Ul,
-} from "./index.style";
-import { Container } from "../../global.styles";
+} from "./style";
+import { Container } from "../../global.style";
 import LoginIcon from "../../assets/icons/login.svg";
 import LogoIcon from "../../assets/icons/logo.svg";
 
