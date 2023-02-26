@@ -87,15 +87,17 @@ export const SearchBtn = styled.button`
 
 export const AdvancedMenu = styled.form`
   max-width: 920px;
-  width: 920px;
   position: absolute;
   top: 140%;
   right: 0;
   background-color: #ffffff;
   border-radius: 5px;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease, pointer_events 0.3s ease;
   pointer-events: ${({ pointer_events }) => pointer_events};
   opacity: ${({ opacity }) => opacity};
+  @media (max-width: 760px) {
+    top: 120%;
+  }
 `;
 
 export const InputsWrapper = styled.div`
@@ -118,6 +120,9 @@ export const InputsGroup = styled.div`
   }
   :last-child {
     margin-bottom: 20px;
+  }
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
   }
 `;
 

@@ -68,7 +68,9 @@ export class Option extends Component {
               </InputsWrapper>
               <ButtonsWrapper>
                 <FormButton type="reset">Submit</FormButton>
-                <FormButton type="submit">Cancel</FormButton>
+                <FormButton onClick={openAdvanced} type="submit">
+                  Cancel
+                </FormButton>
               </ButtonsWrapper>
             </AdvancedMenu>
           </OptionMenu>
