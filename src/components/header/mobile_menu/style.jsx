@@ -12,7 +12,7 @@ export const MobileMenuWrapper = styled.div`
   padding: 20px;
   transition: transform 0.3s ease;
   transform: translateY(${({ menu }) => (menu === "open" ? "0" : "-3000px")});
-  @media (min-width: 670px) {
+  @media (min-width: 761px) {
     display: none;
   }
 `;
@@ -27,6 +27,9 @@ export const CloseButton = styled.button`
 
 export const MenuList = styled.ul`
   margin-top: 40%;
+  @media (min-width: 500px) {
+    margin-top: 30%;
+  }
 `;
 
 export const MenuItem = styled.li`
