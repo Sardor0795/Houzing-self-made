@@ -89,7 +89,7 @@ export const SocialsLink = styled.a`
   justify-content: center;
   transition: background-color 0.3s ease;
   :hover {
-    background-color: #253b4e;
+    background-color: ${({ mobile }) => (mobile ? "#E7EAECFF" : "#253b4e")};
     opacity: 1;
   }
 `;
