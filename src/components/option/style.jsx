@@ -140,6 +140,16 @@ export const Input = styled.input`
   :not(:last-child) {
     margin-right: 20px;
   }
+  @media (max-width: 600px) {
+    width: 50%;
+    :not(:last-child) {
+      margin-right: 0px;
+    }
+    margin-bottom: 10px;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 export const ButtonsWrapper = styled.div`
@@ -158,4 +168,8 @@ export const FormButton = styled.button`
   border: 1px solid ${({ type }) => (type === "submit" ? "#0061DF" : "#0D263B")};
   border-radius: 2px;
   margin-right: ${({ type }) => (type !== "submit" ? "20px" : "0")};
+  @media (max-width: 600px) {
+    width: 100%;
+    padding: 12px 10px;
+  }
 `;
