@@ -93,3 +93,21 @@ export const Container = styled.div`
   margin-right: auto;
   margin-left: auto;
 `;
+
+export const UpButton = styled.button`
+  width: 45px;
+  height: 45px;
+  background-color: #0061df;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 11px;
+  right: calc(50% - 665px);
+`;
+
+export const UpButtonIcon = styled.img`
+  /* width: 10px;
+  height: 6px; */
+`;
