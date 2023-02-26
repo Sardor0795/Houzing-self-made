@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Category } from "../../components/category";
 import { Choose } from "../../components/choose";
+import { Footer } from "../../components/footer";
 import { Header } from "../../components/header";
 import { Hero } from "../../components/hero";
 import { Option } from "../../components/option";
@@ -22,6 +23,7 @@ export class Home extends Component {
         <Popular/>
         <Recent/>
         <Testiomental/>
+        <Footer/>
       </>
     );
   }
