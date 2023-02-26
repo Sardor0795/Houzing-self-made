@@ -12,6 +12,10 @@ export const GlobalStyles = createGlobalStyle`
     outline: none;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     font-family: "Montserrat", "sans-serif";
   }
@@ -105,6 +109,11 @@ export const UpButton = styled.button`
   position: fixed;
   bottom: 11px;
   right: calc(50% - 665px);
+  display: none;
+  transition: display 0.3s ease;
+  .show& {
+    display: flex;
+  }
 `;
 
 export const UpButtonIcon = styled.img`

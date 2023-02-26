@@ -4,13 +4,28 @@ import { Home } from "../pages/home";
 
 import UpArrowIcon from "../assets/icons/up_arrow.svg";
 
+setInterval(() => {
+  if (document.querySelector(".upButton")) {
+    document.querySelector(".upButton").classList.remove("show");
+  }
+}, 5000);
+
 export class Root extends Component {
-  
   render() {
+    const toTop = () => {
+      window.scroll(0, 0);
+    };
+
+    window.onscroll = () => {
+      if (document.querySelector(".upButton")) {
+        document.querySelector(".upButton").classList.add("show");
+      }
+    };
+
     return (
       <>
         <Home />
-        <UpButton>
+        <UpButton className="upButton" onClick={toTop}>
           <UpButtonIcon src={UpArrowIcon} alt="img" />
         </UpButton>
       </>
