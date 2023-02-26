@@ -12,6 +12,9 @@ export const MobileMenuWrapper = styled.div`
   padding: 20px;
   transition: transform 0.3s ease;
   transform: translateY(${({ menu }) => (menu === "open" ? "0" : "-3000px")});
+  @media (min-width: 670px) {
+    display: none;
+  }
 `;
 
 export const CloseButton = styled.button`
