@@ -11,7 +11,7 @@ export const MobileMenuWrapper = styled.div`
   left: 0;
   padding: 20px;
   transition: transform 0.3s ease;
-  transform: translateX(${({ menu }) => (menu === "open" ? "0" : "5000px")});
+  transform: translateY(${({ menu }) => (menu === "open" ? "0" : "-3000px")});
 `;
 
 export const CloseButton = styled.button`
