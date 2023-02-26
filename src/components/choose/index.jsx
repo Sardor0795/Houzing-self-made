@@ -17,11 +17,11 @@ export class Choose extends Component {
             Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.
           </ChooseText>
           <ChooseCards>
-            <ChooseCard cardIcon={ChooseSmileImg}>
+            <ChooseCard mBottom cardIcon={ChooseSmileImg}>
                 <ChooseCardTitle>Trusted By Thousands</ChooseCardTitle>
                 <ChooseCardText>With over 1 million+ homes for sale available on the website, Trulia can match you with a house you will want to call home.</ChooseCardText>
             </ChooseCard>
-            <ChooseCard cardIcon={ChooseHomeImg} large>
+            <ChooseCard mBottom cardIcon={ChooseHomeImg} large>
                 <ChooseCardTitle>Wide Renge Of Properties</ChooseCardTitle>
                 <ChooseCardText>With over 1 million+ homes for sale available on the website, Trulia can match you with a house you will want to call home.</ChooseCardText>
             </ChooseCard>

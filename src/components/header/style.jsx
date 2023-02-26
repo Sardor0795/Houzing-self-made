@@ -32,6 +32,9 @@ export const Ul = styled.ul`
 
 export const Li = styled.li`
   margin-right: ${({ last }) => (!last ? "64px" : 0)};
+  @media (max-width: 800px) {
+    margin-right: 50px;
+  }
 `;
 
 export const LoginIconStyle = styled.img`

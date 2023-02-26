@@ -41,6 +41,11 @@ export const ChooseCard = styled.div`
   padding-top: 74px;
   background-repeat: no-repeat;
   background-position: center top;
+  @media (max-width: 800px) {
+    width: 50%;
+    max-width: 50%;
+    margin-bottom: ${({ mBottom }) => (mBottom ? "40px" : 0)};
+  }
 `;
 
 export const ChooseCardTitle = styled.h3`
@@ -59,4 +64,7 @@ export const ChooseCardText = styled.p`
   line-height: 24px;
   color: #696969;
   width: 235px;
+  @media (max-width: 800px) {
+    width: unset;
+  }
 `;

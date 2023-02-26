@@ -108,14 +108,17 @@ export const UpButton = styled.button`
   justify-content: center;
   position: fixed;
   bottom: 11px;
-  right: calc(50% - 665px);
   transition: opacity 0.3s ease;
   opacity: 0;
+  right: 15px;
   pointer-events: none;
   .show& {
     display: flex;
     opacity: 1;
     pointer-events: all;
+  }
+  @media (min-width: 1370px) {
+    right: calc(50% - 665px);
   }
 `;
 

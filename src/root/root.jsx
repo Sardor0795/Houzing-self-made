@@ -4,11 +4,11 @@ import { Home } from "../pages/home";
 
 import UpArrowIcon from "../assets/icons/up_arrow.svg";
 
-setInterval(() => {
-  if (document.querySelector(".upButton")) {
-    document.querySelector(".upButton").classList.remove("show");
-  }
-}, 5000);
+// setInterval(() => {
+//   if (document.querySelector(".upButton")) {
+//     document.querySelector(".upButton").classList.remove("show");
+//   }
+// }, 5000);
 
 export class Root extends Component {
   render() {
