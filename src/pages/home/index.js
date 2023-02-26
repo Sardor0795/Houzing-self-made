@@ -5,7 +5,9 @@ import { Header } from "../../components/header";
 import { Hero } from "../../components/hero";
 import { Option } from "../../components/option";
 import { Popular } from "../../components/popular";
+import { Recent } from "../../components/recent";
 import { Recommend } from "../../components/recomend";
+import { Testiomental } from "../../components/testiomentioa";
 
 export class Home extends Component {
   render() {
@@ -18,6 +20,8 @@ export class Home extends Component {
         <Choose />
         <Category />
         <Popular/>
+        <Recent/>
+        <Testiomental/>
       </>
     );
   }
