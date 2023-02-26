@@ -26,7 +26,7 @@ export const CloseButton = styled.button`
 `;
 
 export const MenuList = styled.ul`
-  margin-top: 20%;
+  margin-top: 40%;
 `;
 
 export const MenuItem = styled.li`
