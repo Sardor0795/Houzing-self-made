@@ -133,12 +133,15 @@ export const Input = styled.input`
   font-size: 14px;
   line-height: 20px;
   color: #0d263b;
-  width: 25%;
+  width: 200px;
   ::placeholder {
     color: #0d263b;
   }
   :not(:last-child) {
     margin-right: 20px;
+  }
+  @media (max-width: 960px) {
+    width: 25%;
   }
   @media (max-width: 600px) {
     width: 50%;
@@ -147,7 +150,7 @@ export const Input = styled.input`
     }
     margin-bottom: 10px;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 500px) {
     width: 100%;
   }
 `;
