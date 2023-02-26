@@ -116,7 +116,4 @@ export const UpButton = styled.button`
   }
 `;
 
-export const UpButtonIcon = styled.img`
-  /* width: 10px;
-  height: 6px; */
-`;
+export const UpButtonIcon = styled.img``;

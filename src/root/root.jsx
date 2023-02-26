@@ -17,6 +17,7 @@ export class Root extends Component {
     };
 
     window.onscroll = () => {
+      console.log(window.screenTop);
       if (document.querySelector(".upButton")) {
         document.querySelector(".upButton").classList.add("show");
       }

@@ -31,6 +31,7 @@ export const Locations = styled.a`
   color: #ffffff;
   display: flex;
   align-items: center;
+  width: fit-content;
 `;
 
 export const FooterTitle = styled.h3`
