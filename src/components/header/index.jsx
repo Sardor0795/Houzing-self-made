@@ -3,6 +3,7 @@ import {
   HeaderContent,
   HeaderWrapper,
   Li,
+  LoginButtonStyle,
   LoginIconStyle,
   LogoIconStyle,
   Ul,
@@ -14,7 +15,7 @@ import LogoIcon from "../../assets/icons/logo.svg";
 export class Header extends Component {
   render() {
     return (
-      <HeaderWrapper className='header'>
+      <HeaderWrapper className="header">
         <Container>
           <HeaderContent>
             <LogoIconStyle href="!#">
@@ -31,9 +32,10 @@ export class Header extends Component {
                 <a href="!#">Contacts</a>
               </Li>
             </Ul>
-            <button>
+            <LoginButtonStyle>
               <LoginIconStyle src={LoginIcon} alt="img" />
-            </button>
+              Login
+            </LoginButtonStyle>
           </HeaderContent>
         </Container>
       </HeaderWrapper>

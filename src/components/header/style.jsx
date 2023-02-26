@@ -37,9 +37,20 @@ export const Li = styled.li`
 export const LoginIconStyle = styled.img`
   width: 24px;
   height: 24px;
+  display: none;
 `;
 
 export const LogoIconStyle = styled.a`
   width: 117px;
   height: 36px;
+`;
+
+export const LoginButtonStyle = styled.button`
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 12px 40px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
 `;
