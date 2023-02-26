@@ -49,6 +49,12 @@ export const ChooseCard = styled.div`
     padding-left: 20px;
     margin-bottom: ${({ mBottom }) => (mBottom ? "40px" : 0)};
   }
+  @media (max-width: 610px) {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: ${({ mBottomSmall }) =>
+      mBottomSmall ? "40px" : 0};
+  }
 `;
 
 export const ChooseCardTitle = styled.h3`

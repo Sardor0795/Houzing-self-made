@@ -25,6 +25,9 @@ export const OptionWrapper = styled.div`
 
 export const OptionMenu = styled.div`
   display: flex;
+  @media (max-width: 760px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const SearchAddresInput = styled.input`
@@ -39,6 +42,17 @@ export const SearchAddresInput = styled.input`
     ::placeholder {
       font-size: 12px;
     }
+
+    @media (max-width: 760px) {
+      width: 100%;
+      margin-right: 0;
+      border: 0;
+      border-bottom: 1px solid #e6e9ec;
+      margin-bottom: 24px;
+      ::placeholder {
+        font-size: 14px;
+      }
+    }
   }
 `;
 
@@ -46,10 +60,24 @@ export const AdvancedBtn = styled.button`
   ${common}
   background-image: url("${optionAdvancedIcon}");
   background-position: left 15px center;
+  @media (max-width: 760px) {
+    width: calc(50% - 10px);
+  }
 `;
 
 export const SearchBtn = styled.button`
   ${common}
   background-image: url("${optionSearchIcon}");
   background-position: left 54px center;
+  @media (max-width: 760px) {
+    width: calc(50% - 10px);
+    background-position: left 40% center;
+  }
+  @media (max-width: 610px) {
+    background-position: left 35% center;
+  }
+  @media (max-width: 420px) {
+    padding-left: 60px;
+    background-position: left 35px center;
+  }
 `;

@@ -52,6 +52,9 @@ export const LoginIconStyle = styled.img`
 export const LogoIconStyle = styled.a`
   width: 117px;
   height: 36px;
+  @media (max-width: 600px) {
+    margin-bottom: ${({ bottom }) => (bottom ? "24px" : "unset")};
+  }
 `;
 
 export const LoginButtonStyle = styled.button`

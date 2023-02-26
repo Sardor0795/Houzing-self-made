@@ -6,10 +6,24 @@ export const FooterTopWrapper = styled.div`
   padding-bottom: 24px;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 760px) {
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 0;
+  }
 `;
 
 export const Contact = styled.div`
   max-width: 253px;
+  @media (max-width: 760px) {
+    width: 50%;
+    max-width: 50%;
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+    max-width: 100%;
+  }
 `;
 
 export const LocationIconStyled = styled.img`
@@ -32,6 +46,13 @@ export const Locations = styled.a`
   display: flex;
   align-items: center;
   width: fit-content;
+  @media (max-width: 760px) {
+    width: ${({ textLg }) => (textLg ? "256px" : "100%")};
+    margin-left: ${({ textLg }) => (textLg ? "auto" : "unset")};
+    margin-right: ${({ textLg }) => (textLg ? "auto" : "unset")};
+    text-align: center;
+    justify-content: center;
+  }
 `;
 
 export const FooterTitle = styled.h3`
@@ -45,6 +66,13 @@ export const FooterTitle = styled.h3`
 export const SocialsList = styled.ul`
   display: flex;
   margin-left: -11px;
+  @media (max-width: 760px) {
+    margin-left: unset;
+    justify-content: center;
+  }
+  @media (max-width: 600px) {
+    margin-bottom: 40px;
+  }
 `;
 
 export const SocialsItem = styled.li`
@@ -66,7 +94,19 @@ export const SocialsLink = styled.a`
   }
 `;
 
-export const ExtraLinksWrapper = styled.div``;
+export const ExtraLinksWrapper = styled.div`
+  @media (max-width: 760px) {
+    width: 50%;
+    max-width: 50%;
+    order: ${({ order_1 }) => (order_1 ? "-1" : "unset")};
+    margin-bottom: 40px;
+  }
+  @media (max-width: 600px) {
+    order: ${({ order_1 }) => (order_1 ? "unset" : "unset")};
+    width: 100%;
+    max-width: 100%;
+  }
+`;
 
 export const ExtraLinksList = styled.ul``;
 export const ExtraLinksItem = styled.li`

@@ -30,11 +30,11 @@ export class FooterTop extends Component {
     return (
       <Container>
         <FooterTopWrapper>
-          <Contact>
+          <Contact order_0>
             <FooterTitle>Contact Us</FooterTitle>
             <Ul>
               <li>
-                <Locations href="!#">
+                <Locations textLg href="!#">
                   <LocationIconStyled src={LocationIcon} alt="img" />
                   329 Queensberry Street, North Melbourne VIC 3051, Australia.
                 </Locations>
@@ -75,7 +75,7 @@ export class FooterTop extends Component {
               </SocialsItem>
             </SocialsList>
           </Contact>
-          <ExtraLinksWrapper>
+          <ExtraLinksWrapper >
             <FooterTitle>Discover</FooterTitle>
             <ExtraLinksList>
               <ExtraLinksItem>
@@ -92,7 +92,7 @@ export class FooterTop extends Component {
               </ExtraLinksItem>
             </ExtraLinksList>
           </ExtraLinksWrapper>
-          <ExtraLinksWrapper>
+          <ExtraLinksWrapper order_1>
             <FooterTitle>Lists by Category</FooterTitle>
             <ExtraLinksList>
               <ExtraLinksItem>

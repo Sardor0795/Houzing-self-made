@@ -10,7 +10,7 @@ export class FooterBottom extends Component {
     return (
       <Container>
         <FooterBottomWrapper>
-          <LogoIconStyle href="!#">
+          <LogoIconStyle bottom href="!#">
             <img src={LogoIcon} alt="logo" />
           </LogoIconStyle>
           <Copyright>

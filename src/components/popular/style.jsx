@@ -26,13 +26,20 @@ export const PopularWrapper = styled.div`
 export const PopularTitle = styled.h2`
   font-weight: 600;
   font-size: 28px;
+  padding: 0 20px;
   line-height: 36px;
   text-align: center;
   letter-spacing: -0.02em;
   color: #fff;
-  width: 567px;
+  max-width: 587px;
   margin-bottom: 48px;
   z-index: 5;
+  @media (max-width: 700px) {
+    font-size: 24px;
+  }
+  @media (max-width: 600px) {
+    font-size: 20px;
+  }
 `;
 
 export const PopularButton = styled.button`
