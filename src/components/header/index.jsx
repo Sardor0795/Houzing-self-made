@@ -16,12 +16,27 @@ import BurgerButtonIcon from "../../assets/icons/header_burger.svg";
 import MobileMenu from "./mobile_menu";
 
 export class Header extends Component {
+  constructor() {
+    super();
+    this.state = {
+      openMobileMenu: null,
+    };
+  }
   render() {
+    const openMobileMenu = () => {
+      this.setState({
+        openMobileMenu: this.state.openMobileMenu === "open" ? null : "open",
+      });
+    };
     return (
       <HeaderWrapper className="header">
         <Container>
           <HeaderContent>
-            <BurgerButton icon={BurgerButtonIcon}></BurgerButton>
+            <BurgerButton
+              onClick={openMobileMenu}
+              icon={BurgerButtonIcon}
+              bgImg={this.state.openMobileMenu}
+            ></BurgerButton>
             <LogoIconStyle href="!#">
               <img src={LogoIcon} alt="logo" />
             </LogoIconStyle>
@@ -42,7 +57,7 @@ export class Header extends Component {
             </LoginButtonStyle>
           </HeaderContent>
         </Container>
-        <MobileMenu />
+        <MobileMenu menu={this.state.openMobileMenu} />
       </HeaderWrapper>
     );
   }

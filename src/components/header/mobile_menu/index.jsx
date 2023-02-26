@@ -11,12 +11,16 @@ import FacebookIcon from "../../../assets/icons/facebook_black.svg";
 import TwitterIcon from "../../../assets/icons/twitter_black.svg";
 import InstagramIcon from "../../../assets/icons/instagram_black.svg";
 import LinkedinIcon from "../../../assets/icons/linkedin_black.svg";
-import { SocialsItem, SocialsLink, SocialsList } from "../../footer/footer__top/style";
+import {
+  SocialsItem,
+  SocialsLink,
+  SocialsList,
+} from "../../footer/footer__top/style";
 
 export default class MobileMenu extends Component {
   render() {
     return (
-      <MobileMenuWrapper>
+      <MobileMenuWrapper menu={this.props.menu}>
         <CloseButton></CloseButton>
         <MenuList>
           <MenuItem>

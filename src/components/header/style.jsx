@@ -77,11 +77,14 @@ export const LoginButtonStyle = styled.button`
 export const BurgerButton = styled.button`
   width: 20px;
   height: 16px;
-  background-image: url("${({ icon }) => icon}");
+  background-image: url("${({ icon, bgImg }) => bgImg === null ? icon : "unset"}");
   background-position: center center;
   background-size: cover;
   display: none;
   @media (max-width: 760px) {
     display: block;
+    position: relative;
+    z-index: 99;
+  
   }
 `;
