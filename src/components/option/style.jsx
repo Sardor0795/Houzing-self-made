@@ -93,7 +93,9 @@ export const AdvancedMenu = styled.form`
   right: 0;
   background-color: #ffffff;
   border-radius: 5px;
-  display: ${({ display }) => display};
+  transition: opacity 0.3s ease;
+  pointer-events: ${({ pointer_events }) => pointer_events};
+  opacity: ${({ opacity }) => opacity};
 `;
 
 export const InputsWrapper = styled.div`
@@ -111,7 +113,12 @@ export const InputTitle = styled.p`
 
 export const InputsGroup = styled.div`
   display: flex;
-  margin-bottom: 30px;
+  :not(:last-child) {
+    margin-bottom: 30px;
+  }
+  :last-child {
+    margin-bottom: 20px;
+  }
 `;
 
 export const Input = styled.input`
@@ -133,7 +140,7 @@ export const Input = styled.input`
 export const ButtonsWrapper = styled.div`
   background: #f6f8f9;
   border-radius: 0px 0px 5px 5px;
-  padding: 30px;
+  padding: 20px 30px;
   display: flex;
   justify-content: flex-end;
 `;

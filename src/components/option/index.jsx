@@ -19,13 +19,20 @@ export class Option extends Component {
   constructor() {
     super();
     this.state = {
-      advancedShow: "none",
+      advancedBtn: {
+        opacity: "0",
+        pointer_events: "none",
+      },
     };
   }
   render() {
     const openAdvanced = () => {
       this.setState({
-        advancedShow: this.state.advancedShow === "none" ? "block" : "none",
+        advancedBtn: {
+          opacity: this.state.advancedBtn.opacity === "0" ? "1" : "0",
+          pointer_events:
+            this.state.advancedBtn.pointer_events === "nona" ? "all" : "none",
+        },
       });
     };
     return (
@@ -35,7 +42,10 @@ export class Option extends Component {
             <SearchAddresInput placeholder="Enter an address, neighborhood, city, or ZIP code" />
             <AdvancedBtn onClick={openAdvanced}>Advanced</AdvancedBtn>
             <SearchBtn searchBtn>Search</SearchBtn>
-            <AdvancedMenu display={this.state.advancedShow}>
+            <AdvancedMenu
+              pointerEvents={this.state.advancedBtn.pointer_events}
+              opacity={this.state.advancedBtn.opacity}
+            >
               <InputsWrapper>
                 <InputTitle>Address</InputTitle>
                 <InputsGroup>
