@@ -1,13 +1,22 @@
 import React, { Component } from "react";
-import { CloseButton, MobileMenuWrapper } from "./style";
-
-import CloseIcon from "../../../assets/icons/header_close_btn.svg";
+import { CloseButton, MenuItem, MenuLink, MenuList, MobileMenuWrapper } from "./style";
 
 export default class MobileMenu extends Component {
   render() {
     return (
       <MobileMenuWrapper>
-        <CloseButton icon={CloseIcon}>ffff</CloseButton>
+        <CloseButton></CloseButton>
+        <MenuList>
+            <MenuItem>
+                <MenuLink>Home</MenuLink>
+            </MenuItem>
+            <MenuItem>
+                <MenuLink>Properties</MenuLink>
+            </MenuItem>
+            <MenuItem>
+                <MenuLink>Contacts</MenuLink>
+            </MenuItem>
+        </MenuList>
       </MobileMenuWrapper>
     );
   }
