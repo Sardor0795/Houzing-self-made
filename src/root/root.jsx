@@ -17,10 +17,19 @@ export class Root extends Component {
     };
 
     window.onscroll = () => {
-      console.log(window.screenTop);
       if (document.querySelector(".upButton")) {
         document.querySelector(".upButton").classList.add("show");
       }
+
+      // window.onscroll = () => {
+      //   let elHeader = document.querySelector(".header");
+
+      //   if (window.pageYOffset >= elHeader.offsetTop + 150) {
+      //     elHeader.classList.add("show");
+      //   } else {
+      //     elHeader.classList.remove("show");
+      //   }
+      // };
     };
 
     return (

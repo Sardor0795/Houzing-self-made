@@ -109,10 +109,13 @@ export const UpButton = styled.button`
   position: fixed;
   bottom: 11px;
   right: calc(50% - 665px);
-  display: none;
-  transition: display 0.3s ease;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
   .show& {
     display: flex;
+    opacity: 1;
+    pointer-events: all;
   }
 `;
 

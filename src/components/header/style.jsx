@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeaderWratter = styled.div`
+export const HeaderWrapper = styled.div`
   background-color: #0d263b;
   padding: 14px 0;
   font-family: "Montserrat";
@@ -8,6 +8,15 @@ export const HeaderWratter = styled.div`
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  z-index: 99;
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 0px 5px 1px #0061df;
+  /* .show& {
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 0px 5px 1px #0061df;
+  } */
 `;
 
 export const HeaderContent = styled.div`

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {
   HeaderContent,
-  HeaderWratter,
+  HeaderWrapper,
   Li,
   LoginIconStyle,
   LogoIconStyle,
@@ -14,7 +14,7 @@ import LogoIcon from "../../assets/icons/logo.svg";
 export class Header extends Component {
   render() {
     return (
-      <HeaderWratter>
+      <HeaderWrapper className='header'>
         <Container>
           <HeaderContent>
             <LogoIconStyle href="!#">
@@ -36,7 +36,7 @@ export class Header extends Component {
             </button>
           </HeaderContent>
         </Container>
-      </HeaderWratter>
+      </HeaderWrapper>
     );
   }
 }
