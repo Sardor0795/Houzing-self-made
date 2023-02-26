@@ -28,6 +28,9 @@ export const HeaderContent = styled.div`
 export const Ul = styled.ul`
   display: flex;
   align-items: center;
+  @media (max-width: 760px) {
+    display: none;
+  }
 `;
 
 export const Li = styled.li`
@@ -41,6 +44,9 @@ export const LoginIconStyle = styled.img`
   width: 24px;
   height: 24px;
   display: none;
+  @media (max-width: 760px) {
+    display: block;
+  }
 `;
 
 export const LogoIconStyle = styled.a`
@@ -56,4 +62,23 @@ export const LoginButtonStyle = styled.button`
   padding: 12px 40px;
   border: 1px solid #ffffff;
   border-radius: 2px;
+  @media (max-width: 760px) {
+    font-size: 0;
+    padding: unset;
+    border: 0;
+    display: flex;
+    align-items: center;
+  }
+`;
+
+export const BurgerButton = styled.button`
+  width: 20px;
+  height: 16px;
+  background-image: url("${({ icon }) => icon}");
+  background-position: center center;
+  background-size: cover;
+  display: none;
+  @media (max-width: 760px) {
+    display: block;
+  }
 `;

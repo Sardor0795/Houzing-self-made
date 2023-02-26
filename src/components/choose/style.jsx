@@ -41,9 +41,12 @@ export const ChooseCard = styled.div`
   padding-top: 74px;
   background-repeat: no-repeat;
   background-position: center top;
-  @media (max-width: 800px) {
+  text-align: center;
+  @media (max-width: 1024px) {
     width: 50%;
     max-width: 50%;
+    padding-right: 20px;
+    padding-left: 20px;
     margin-bottom: ${({ mBottom }) => (mBottom ? "40px" : 0)};
   }
 `;
@@ -62,9 +65,10 @@ export const ChooseCardText = styled.p`
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  text-align: center;
   color: #696969;
   width: 235px;
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     width: unset;
   }
 `;

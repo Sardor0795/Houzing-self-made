@@ -35,6 +35,11 @@ export const SearchAddresInput = styled.input`
   ::placeholder {
     color: #0d263b;
   }
+  @media (max-width: 810px) {
+    ::placeholder {
+      font-size: 12px;
+    }
+  }
 `;
 
 export const AdvancedBtn = styled.button`
