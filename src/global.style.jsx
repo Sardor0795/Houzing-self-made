@@ -72,7 +72,7 @@ export const GlobalStyles = createGlobalStyle`
 
   body::-webkit-scrollbar-thumb {
     /* Foreground */
-    background: #0D263B;
+    background: #0061DF;
     border-radius: 2px;
   }
 
