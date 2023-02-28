@@ -18,6 +18,12 @@ export const HeroTitle = styled.h1`
   letter-spacing: -0.02em;
   color: #ffffff;
   margin-bottom: 8px;
+  @media (max-width: 600px) {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+  }
 `;
 
 export const HeroText = styled.p`
@@ -26,6 +32,14 @@ export const HeroText = styled.p`
   line-height: 24px;
   color: #ffffff;
   margin-bottom: 24px;
+  @media (max-width: 600px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  @media (max-width: 330px) {
+    font-size: 13px;
+  }
 `;
 
 export const HeroMiniCard = styled.span`
@@ -39,6 +53,15 @@ export const HeroMiniCard = styled.span`
   background-repeat: no-repeat;
   background-position: center top;
   margin-bottom: 24px;
+  @media (max-width: 600px) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  @media (max-width: 376px) {
+    font-size: 11px;
+  }
 `;
 
 export const HeroPrice = styled.div`
@@ -48,6 +71,12 @@ export const HeroPrice = styled.div`
   letter-spacing: -0.02em;
   color: #ffffff;
   margin-bottom: 48px;
+  @media (max-width: 600px) {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
 `;
 
 export const HeroButton = styled.button`
@@ -58,4 +87,9 @@ export const HeroButton = styled.button`
   padding: 12px 50px;
   border: 1px solid #ffffff;
   border-radius: 2px;
+  @media (max-width: 600px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
 `;
