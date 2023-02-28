@@ -1,10 +1,7 @@
-import React, { Component } from 'react'
-import { CategoryWrapper } from './style'
+import { CategoryWrapper } from "./style";
 
-export class Category extends Component {
-  render() {
-    return (
-      <CategoryWrapper>Category</CategoryWrapper>
-    )
-  }
-}
+const Category = () => {
+  return <CategoryWrapper>Category</CategoryWrapper>;
+};
+
+export { Category };
