@@ -12,9 +12,9 @@ export const Testiomental = () => (
         Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.
       </SectionText>
       <MainCardsWrapper>
-        <TestCard/>
-        <TestCard/>
-        <TestCard/>
+        <TestCard />
+        <TestCard />
+        <TestCard />
       </MainCardsWrapper>
     </Container>
   </TestiomentalWrapper>
