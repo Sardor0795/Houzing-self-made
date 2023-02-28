@@ -13,6 +13,8 @@ export const Testiomental = () => (
       </SectionText>
       <MainCardsWrapper>
         <TestCard/>
+        <TestCard/>
+        <TestCard/>
       </MainCardsWrapper>
     </Container>
   </TestiomentalWrapper>
