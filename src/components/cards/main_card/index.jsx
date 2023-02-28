@@ -15,9 +15,6 @@ import {
   MainCardWrapper,
 } from "./style";
 
-import bgImg_1 from "../../../assets/img/main_card_img_1.jpg";
-import userImg_1 from "../../../assets/img/main_card_user_img_1.jpg";
-
 import miniCardIcon_1 from "../../../assets/icons/main_card_bed.svg";
 import miniCardIcon_2 from "../../../assets/icons/main_card_bath.svg";
 import miniCardIcon_3 from "../../../assets/icons/main_card_car.svg";
@@ -26,13 +23,13 @@ import miniCardIcon_4 from "../../../assets/icons/main_card_ruler.svg";
 import arrowIcon from "../../../assets/icons/main_card_arrow.svg";
 import heartIcon from "../../../assets/icons/main_card_heart.svg";
 
-export const MainCard = () => {
+export const MainCard = ({ bgImg, userImg }) => {
   return (
     <MainCardWrapper>
-      <MainCardTop bgImg={bgImg_1}>
+      <MainCardTop bgImg={bgImg}>
         <Badge type="feature">FEATURED</Badge>
         <Badge type="sale">FOR SALE</Badge>
-        <MainCardUserImg userImg={userImg_1} />
+        <MainCardUserImg userImg={userImg} />
       </MainCardTop>
       <MainCardCenter>
         <MainCardTitle>New Apartment Nice Wiew</MainCardTitle>
