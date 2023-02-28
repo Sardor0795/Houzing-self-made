@@ -1,14 +1,15 @@
 import React from "react";
-import { CategoryCardImg, CategoryCardWrapper } from "./style";
+import {
+  CategoryCardImg,
+  CategoryCardMiniImg,
+  CategoryCardWrapper,
+} from "./style";
 
-export const CategoryCard = ({ img }) => {
+export const CategoryCard = ({ img, text, miniImg }) => {
   return (
     <CategoryCardWrapper>
       <CategoryCardImg src={img} />
+      <CategoryCardMiniImg minImg={miniImg}>{text}</CategoryCardMiniImg>
     </CategoryCardWrapper>
   );
 };
-
-// <CategoryCardImg src={catImg_2} />
-// <CategoryCardImg src={catImg_3} />
-// <CategoryCardImg src={catImg_4} />
