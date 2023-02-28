@@ -19,12 +19,14 @@ export const Option = () => {
   const [advancedBtn, setAdvancedBtn] = useState({
     opacity: "0",
     pointer_events: "none",
+    z_index: -99,
   });
 
   const openAdvanced = () => {
     setAdvancedBtn({
       opacity: advancedBtn.opacity === "0" ? "1" : "0",
-      pointer_events: advancedBtn.pointer_events === "nona" ? "all" : "none",
+      pointer_events: advancedBtn.pointer_events === "none" ? "all" : "none",
+      z_index: advancedBtn.z_index === -99 ? "unset" : -99,
     });
   };
 
@@ -38,6 +40,7 @@ export const Option = () => {
           <AdvancedMenu
             pointerEvents={advancedBtn.pointer_events}
             opacity={advancedBtn.opacity}
+            z_index={advancedBtn.z_index}
           >
             <InputsWrapper>
               <InputTitle>Address</InputTitle>
