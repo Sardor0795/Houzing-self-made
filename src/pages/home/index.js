@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 import { Category } from "../../components/category";
 import { Choose } from "../../components/choose";
 import { Footer } from "../../components/footer";
@@ -10,21 +9,17 @@ import { Recent } from "../../components/recent";
 import { Recommend } from "../../components/recomend";
 import { Testiomental } from "../../components/testiomential";
 
-export class Home extends Component {
-  render() {
-    return (
-      <>
-        <Header />
-        <Option />
-        <Hero />
-        <Recommend />
-        <Choose />
-        <Category />
-        <Popular />
-        <Recent />
-        <Testiomental />
-        <Footer />
-      </>
-    );
-  }
-}
+export const Home = () => (
+  <>
+    <Header />
+    <Option />
+    <Hero />
+    <Recommend />
+    <Choose />
+    <Category />
+    <Popular />
+    <Recent />
+    <Testiomental />
+    <Footer />
+  </>
+);
