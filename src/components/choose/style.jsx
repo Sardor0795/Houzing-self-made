@@ -10,25 +10,6 @@ const common = css`
   text-align: center;
 `;
 
-export const ChooseTitle = styled.h2`
-  ${common}
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 36px;
-  letter-spacing: -0.02em;
-  color: #0d263b;
-  margin-bottom: 8px;
-`;
-
-export const ChooseText = styled.p`
-  ${common}
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #696969;
-  margin-bottom: 40px;
-`;
-
 export const ChooseCards = styled.div`
   display: flex;
   justify-content: space-between;
@@ -52,8 +33,7 @@ export const ChooseCard = styled.div`
   @media (max-width: 610px) {
     width: 100%;
     max-width: 100%;
-    margin-bottom: ${({ mBottomSmall }) =>
-      mBottomSmall ? "40px" : 0};
+    margin-bottom: ${({ mBottomSmall }) => (mBottomSmall ? "40px" : 0)};
   }
 `;
 

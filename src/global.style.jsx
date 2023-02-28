@@ -122,4 +122,23 @@ export const UpButton = styled.button`
   }
 `;
 
+export const SectionTitle = styled.h2`
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  color: #0d263b;
+  margin-bottom: 8px;
+`;
+
+export const SectionText = styled.p`
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #696969;
+  margin-bottom: 40px;
+`;
+
 export const UpButtonIcon = styled.img``;

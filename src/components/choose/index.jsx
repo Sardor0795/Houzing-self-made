@@ -1,11 +1,9 @@
-import { Container } from "../../global.style";
+import { Container, SectionText, SectionTitle } from "../../global.style";
 import {
   ChooseCard,
   ChooseCards,
   ChooseCardText,
   ChooseCardTitle,
-  ChooseText,
-  ChooseTitle,
   ChooseWrapper,
 } from "./style";
 
@@ -17,10 +15,10 @@ import ChooseMapImg from "../../assets/icons/shoose_map.svg";
 export const Choose = () => (
   <ChooseWrapper>
     <Container>
-      <ChooseTitle>Why Choose Us</ChooseTitle>
-      <ChooseText>
+      <SectionTitle>Why Choose Us</SectionTitle>
+      <SectionText>
         Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.
-      </ChooseText>
+      </SectionText>
       <ChooseCards>
         <ChooseCard mBottomSmall mBottom cardIcon={ChooseSmileImg}>
           <ChooseCardTitle>Trusted By Thousands</ChooseCardTitle>
