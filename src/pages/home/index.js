@@ -8,7 +8,7 @@ import { Option } from "../../components/option";
 import { Popular } from "../../components/popular";
 import { Recent } from "../../components/recent";
 import { Recommend } from "../../components/recomend";
-import { Testiomental } from "../../components/testiomentioa";
+import { Testiomental } from "../../components/testiomential";
 
 export class Home extends Component {
   render() {
@@ -20,10 +20,10 @@ export class Home extends Component {
         <Recommend />
         <Choose />
         <Category />
-        <Popular/>
-        <Recent/>
-        <Testiomental/>
-        <Footer/>
+        <Popular />
+        <Recent />
+        <Testiomental />
+        <Footer />
       </>
     );
   }

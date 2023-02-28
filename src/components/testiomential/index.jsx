@@ -1,4 +1,7 @@
 import { Container, SectionText, SectionTitle } from "../../global.style";
+import { TestCard } from "../cards/test_card";
+
+import { MainCardsWrapper } from "../recomend/style";
 import { TestiomentalWrapper } from "./style";
 
 export const Testiomental = () => (
@@ -8,6 +11,9 @@ export const Testiomental = () => (
       <SectionText>
         Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.
       </SectionText>
+      <MainCardsWrapper>
+        <TestCard/>
+      </MainCardsWrapper>
     </Container>
   </TestiomentalWrapper>
 );
