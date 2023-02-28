@@ -1,8 +1,12 @@
 import React from "react";
-import { TestCardInner, TestCardWrapper } from "./style";
+import {
+  TestCardInner,
+  TestCardUserImg,
+  TestCardUserInfo,
+  TestCardWrapper,
+} from "./style";
 
 import userImg from "../../../assets/img/main_card_user_img_3.jpg";
-import { TestCardUserImg, TestCardUserInfo } from "../../testiomential/style";
 
 export const TestCard = () => {
   return (
@@ -11,7 +15,7 @@ export const TestCard = () => {
       experts. I've learned a lot and recommend it to all my friends “
       <TestCardInner>
         <TestCardUserImg userImg={userImg} />
-        <TestCardUserInfo name>Marvin McKinney</TestCardUserInfo>
+        <TestCardUserInfo name="name">Marvin McKinney</TestCardUserInfo>
         <TestCardUserInfo>Designer</TestCardUserInfo>
       </TestCardInner>
     </TestCardWrapper>

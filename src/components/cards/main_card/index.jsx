@@ -5,6 +5,7 @@ import {
   MainCardBtuttons,
   MainCardCenter,
   MainCardMiniCards,
+  MainCardMiniCardsWrapper,
   MainCardPriceCurrent,
   MainCardPriceDell,
   MainCardPrices,
@@ -34,12 +35,16 @@ export const MainCard = ({ bgImg, userImg }) => {
       <MainCardCenter>
         <MainCardTitle>New Apartment Nice Wiew</MainCardTitle>
         <MainCardText>Quincy St, Brooklyn, NY, USA</MainCardText>
-        <MainCardMiniCards bgIcon={miniCardIcon_1}>4 Beds</MainCardMiniCards>
-        <MainCardMiniCards bgIcon={miniCardIcon_2}>5 Baths</MainCardMiniCards>
-        <MainCardMiniCards bgIcon={miniCardIcon_3}>1 Garage</MainCardMiniCards>
-        <MainCardMiniCards bgIcon={miniCardIcon_4} last>
-          1200 Sq Ft
-        </MainCardMiniCards>
+        <MainCardMiniCardsWrapper>
+          <MainCardMiniCards bgIcon={miniCardIcon_1}>4 Beds</MainCardMiniCards>
+          <MainCardMiniCards bgIcon={miniCardIcon_2}>5 Baths</MainCardMiniCards>
+          <MainCardMiniCards bgIcon={miniCardIcon_3}>
+            1 Garage
+          </MainCardMiniCards>
+          <MainCardMiniCards bgIcon={miniCardIcon_4} last>
+            1200 Sq Ft
+          </MainCardMiniCards>
+        </MainCardMiniCardsWrapper>
       </MainCardCenter>
       <MainCardBottom>
         <MainCardPrices>

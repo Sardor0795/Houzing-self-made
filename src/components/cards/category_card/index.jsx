@@ -7,8 +7,8 @@ import {
 
 export const CategoryCard = ({ img, text, miniImg }) => {
   return (
-    <CategoryCardWrapper>
-      <CategoryCardImg src={img} />
+    <CategoryCardWrapper img={img}>
+      <CategoryCardImg />
       <CategoryCardMiniImg minImg={miniImg}>{text}</CategoryCardMiniImg>
     </CategoryCardWrapper>
   );

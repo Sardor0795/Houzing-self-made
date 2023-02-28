@@ -74,10 +74,14 @@ export const LoginButtonStyle = styled.button`
   }
 `;
 
+const checkImg = (icon, bgImg) => {
+  return bgImg === null ? icon : "unset";
+};
+
 export const BurgerButton = styled.button`
   width: 20px;
   height: 16px;
-  background-image: url("${({ icon, bgImg }) => bgImg === null ? icon : "unset"}");
+  background-image: url("${({ icon, bgImg }) => checkImg(icon, bgImg)}");
   background-position: center center;
   background-size: cover;
   display: none;
@@ -85,6 +89,5 @@ export const BurgerButton = styled.button`
     display: block;
     position: relative;
     z-index: 99;
-  
   }
 `;

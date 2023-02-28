@@ -6,6 +6,24 @@ export const MainCardWrapper = styled.div`
   border: 1px solid #e6e9ec;
   border-radius: 3px;
   overflow: hidden;
+  margin-left: 20px;
+  margin-bottom: 32px;
+  @media (max-width: 1024px) {
+    max-width: unset;
+    width: 45%;
+  }
+  @media (max-width: 760px) {
+    width: 70%;
+  }
+  @media (max-width: 600px) {
+    width: 80%;
+  }
+  @media (max-width: 500px) {
+    width: 90%;
+  }
+  @media (max-width: 400px) {
+    width: 100%;
+  }
 `;
 
 const common = css`
@@ -70,16 +88,27 @@ export const MainCardText = styled.p`
   margin-bottom: 16px;
 `;
 
+export const MainCardMiniCardsWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
 export const MainCardMiniCards = styled.span`
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #696969;
   padding-top: 24px;
-  margin-right: ${({ last }) => (last ? "0px" : "35px")};
   background-image: url("${({ bgIcon }) => bgIcon}");
   background-repeat: no-repeat;
   background-position: center top;
+  margin-right: ${({ last }) => (last ? "0px" : "10px")};
+  @media (max-width: 360px) {
+    font-size: 13px;
+  }
+  @media (max-width: 330px) {
+    font-size: 12px;
+  }
 `;
 
 export const MainCardBottom = styled.div`

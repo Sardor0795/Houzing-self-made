@@ -9,6 +9,14 @@ export const HeroWrapper = styled.div`
   padding: 134px 0;
   min-height: 571px;
   text-align: center;
+  @media (max-width: 600px) {
+    padding-top: 160px;
+    padding-bottom: 20px;
+  }
+  @media (max-width: 400px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 `;
 
 export const HeroTitle = styled.h1`

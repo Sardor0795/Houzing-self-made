@@ -5,6 +5,12 @@ export const CategoryCardWrapper = styled.div`
   height: 350px;
   overflow: hidden;
   position: relative;
+  border-radius: 3px;
+  margin-left: 20px;
+  margin-bottom: 32px;
+  background-image: url("${({ img }) => img}");
+  background-position: center center;
+  background-size: cover;
   cursor: pointer;
   ::before {
     content: "";
@@ -19,6 +25,22 @@ export const CategoryCardWrapper = styled.div`
 
   &:hover::before {
     opacity: 0;
+  }
+  @media (max-width: 1024px) {
+    max-width: unset;
+    width: 45%;
+  }
+  @media (max-width: 760px) {
+    width: 70%;
+  }
+  @media (max-width: 600px) {
+    width: 80%;
+  }
+  @media (max-width: 500px) {
+    width: 90%;
+  }
+  @media (max-width: 400px) {
+    width: 100%;
   }
 `;
 
