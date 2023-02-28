@@ -13,7 +13,7 @@ import { Container } from "../../global.style";
 import LoginIcon from "../../assets/icons/login.svg";
 import LogoIcon from "../../assets/icons/logo.svg";
 import BurgerButtonIcon from "../../assets/icons/header_burger.svg";
-import MobileMenu from "./mobile_menu";
+import {MobileMenu} from "./mobile_menu";
 
 export class Header extends Component {
   constructor() {

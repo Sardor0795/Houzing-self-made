@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 import {
   CloseButton,
   MenuItem,
@@ -17,45 +16,41 @@ import {
   SocialsList,
 } from "../../footer/footer__top/style";
 
-export default class MobileMenu extends Component {
-  render() {
-    return (
-      <MobileMenuWrapper menu={this.props.menu}>
-        <CloseButton></CloseButton>
-        <MenuList>
-          <MenuItem>
-            <MenuLink>Home</MenuLink>
-          </MenuItem>
-          <MenuItem>
-            <MenuLink>Properties</MenuLink>
-          </MenuItem>
-          <MenuItem>
-            <MenuLink>Contacts</MenuLink>
-          </MenuItem>
-        </MenuList>
-        <SocialsList>
-          <SocialsItem>
-            <SocialsLink mobile>
-              <img src={FacebookIcon} alt="img" />
-            </SocialsLink>
-          </SocialsItem>
-          <SocialsItem>
-            <SocialsLink mobile>
-              <img src={TwitterIcon} alt="img" />
-            </SocialsLink>
-          </SocialsItem>
-          <SocialsItem>
-            <SocialsLink mobile>
-              <img src={InstagramIcon} alt="img" />
-            </SocialsLink>
-          </SocialsItem>
-          <SocialsItem last>
-            <SocialsLink mobile>
-              <img src={LinkedinIcon} alt="img" />
-            </SocialsLink>
-          </SocialsItem>
-        </SocialsList>
-      </MobileMenuWrapper>
-    );
-  }
-}
+export const MobileMenu = ({ menu }) => (
+  <MobileMenuWrapper menu={menu}>
+    <CloseButton></CloseButton>
+    <MenuList>
+      <MenuItem>
+        <MenuLink>Home</MenuLink>
+      </MenuItem>
+      <MenuItem>
+        <MenuLink>Properties</MenuLink>
+      </MenuItem>
+      <MenuItem>
+        <MenuLink>Contacts</MenuLink>
+      </MenuItem>
+    </MenuList>
+    <SocialsList>
+      <SocialsItem>
+        <SocialsLink mobile>
+          <img src={FacebookIcon} alt="img" />
+        </SocialsLink>
+      </SocialsItem>
+      <SocialsItem>
+        <SocialsLink mobile>
+          <img src={TwitterIcon} alt="img" />
+        </SocialsLink>
+      </SocialsItem>
+      <SocialsItem>
+        <SocialsLink mobile>
+          <img src={InstagramIcon} alt="img" />
+        </SocialsLink>
+      </SocialsItem>
+      <SocialsItem last>
+        <SocialsLink mobile>
+          <img src={LinkedinIcon} alt="img" />
+        </SocialsLink>
+      </SocialsItem>
+    </SocialsList>
+  </MobileMenuWrapper>
+);
