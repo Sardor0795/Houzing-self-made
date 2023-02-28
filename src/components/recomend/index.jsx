@@ -1,5 +1,6 @@
 import { RecommendWrapper } from "./style";
 import { Container, SectionText, SectionTitle } from "../../global.style";
+import { MainCard } from "../cards/main_card";
 
 export const Recommend = () => (
   <RecommendWrapper>
@@ -8,6 +9,7 @@ export const Recommend = () => (
       <SectionText>
         Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.
       </SectionText>
+      <MainCard/>
     </Container>
   </RecommendWrapper>
 );
