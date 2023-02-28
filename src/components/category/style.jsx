@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const CategoryWrapper = styled.div`
-  height: 100vh;
-  background-color: #586495;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  min-height: 682px;
+  background-color: #fff;
+  padding-top: 96px;
+  padding-bottom: 136px;
 `;

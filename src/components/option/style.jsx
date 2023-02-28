@@ -92,7 +92,7 @@ export const AdvancedMenu = styled.form`
   right: 0;
   background-color: #ffffff;
   border-radius: 5px;
-  transition: opacity 0.3s ease, pointer_events 0.3s ease;
+  transition: opacity 0.3s ease, pointer-events 0.3s ease, z-index 0.3s ease;
   pointer-events: ${({ pointer_events }) => pointer_events};
   opacity: ${({ opacity }) => opacity};
   z-index: ${({ z_index }) => z_index};

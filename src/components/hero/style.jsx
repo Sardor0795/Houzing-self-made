@@ -6,7 +6,7 @@ export const HeroWrapper = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  padding: 134px 20px;
+  padding: 134px 0;
   min-height: 571px;
   text-align: center;
 `;

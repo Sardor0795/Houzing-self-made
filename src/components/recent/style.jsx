@@ -1,12 +1,9 @@
 import styled from "styled-components";
 
 export const RecentWrapper = styled.div`
-
-    height: 100vh;
-    background-color: #5d5d5d;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-`
+  min-height: 713px;
+  background-color: #fff;
+  color: #fff;
+  padding-top: 96px;
+  padding-bottom: 88px;
+`;
