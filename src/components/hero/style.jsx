@@ -1,14 +1,34 @@
 import styled from "styled-components";
-import heroBg from "../../assets/img/hero.jpg";
+
+export const SlideWrapper = styled.div`
+  position: relative;
+  overflow: hidden;
+`;
+
+export const SlideInner = styled.div`
+  display: flex;
+  width: 300%;
+`;
 
 export const HeroWrapper = styled.div`
-  background-image: url("${heroBg}");
+  width: 100%;
+  position: relative;
+  background-image: url("${({ bgImg }) => bgImg}");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   padding: 134px 0;
   min-height: 571px;
   text-align: center;
+  :before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000000a6;
+  }
   @media (max-width: 600px) {
     padding-top: 160px;
     padding-bottom: 20px;
@@ -26,6 +46,8 @@ export const HeroTitle = styled.h1`
   letter-spacing: -0.02em;
   color: #ffffff;
   margin-bottom: 8px;
+  z-index: 5;
+  position: relative;
   @media (max-width: 600px) {
     font-weight: 600;
     font-size: 28px;
@@ -40,6 +62,8 @@ export const HeroText = styled.p`
   line-height: 24px;
   color: #ffffff;
   margin-bottom: 24px;
+  z-index: 5;
+  position: relative;
   @media (max-width: 600px) {
     font-weight: 400;
     font-size: 14px;
@@ -56,6 +80,8 @@ export const HeroMiniCard = styled.span`
   line-height: 24px;
   color: #ffffff;
   padding-top: 24px;
+  z-index: 5;
+  position: relative;
   margin-right: ${({ last }) => (last ? "0px" : "24px")};
   background-image: url("${({ bgIcon }) => bgIcon}");
   background-repeat: no-repeat;
@@ -79,6 +105,8 @@ export const HeroPrice = styled.div`
   letter-spacing: -0.02em;
   color: #ffffff;
   margin-bottom: 48px;
+  z-index: 5;
+  position: relative;
   @media (max-width: 600px) {
     font-weight: 600;
     font-size: 28px;
@@ -95,9 +123,30 @@ export const HeroButton = styled.button`
   padding: 12px 50px;
   border: 1px solid #ffffff;
   border-radius: 2px;
+  z-index: 5;
+  position: relative;
   @media (max-width: 600px) {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+  }
+`;
+
+export const Right = styled.button`
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #ffffff55;
+  left: ${({ left }) => (left ? "30px" : "unset")};
+  right: ${({ right }) => (right ? "30px" : "unset")};
+  top: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 600px) {
+    left: ${({ left }) => (left ? "50px" : "unset")};
+    right: ${({ right }) => (right ? "50px" : "unset")};
+    top: 80%;
   }
 `;
