@@ -25,11 +25,6 @@ import rightArrow from "../../assets/icons/right_arrow.svg";
 import lefttArrow from "../../assets/icons/left_arrow.svg";
 
 export const Hero = () => {
-  if (document.querySelector(".slide")) {
-    document.querySelector(".slide").width = window.getComputedStyle(
-      document.querySelector(".slideWrapper")
-    ).width;
-  }
   let [offset, setOffset] = useState(0);
   let [index, setIndex] = useState(1);
   let nextBtn = () => {
