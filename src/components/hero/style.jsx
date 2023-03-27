@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const SlideWrapper = styled.div`
+  overflow: hidden;
   position: relative;
 `;
 
