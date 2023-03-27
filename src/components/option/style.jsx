@@ -25,9 +25,13 @@ export const OptionWrapper = styled.div`
 
 export const OptionMenu = styled.div`
   display: flex;
+  background-color: #fff;
   position: relative;
   @media (max-width: 760px) {
     flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 80px;
   }
 `;
 
@@ -98,6 +102,7 @@ export const AdvancedMenu = styled.form`
   z-index: ${({ z_index }) => z_index};
   @media (max-width: 760px) {
     top: 120%;
+    border: 1px solid #e6e9ec;
   }
 `;
 

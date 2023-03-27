@@ -8,11 +8,14 @@ import { Popular } from "../../components/popular";
 import { Recent } from "../../components/recent";
 import { Recommend } from "../../components/recomend";
 import { Testiomental } from "../../components/testiomential";
+import { OptionWrapper } from "./style";
 
 export const Home = () => (
   <>
     <Header />
-    <Option />
+    <OptionWrapper>
+      <Option />
+    </OptionWrapper>
     <Hero />
     <Recommend />
     <Choose />

@@ -5,6 +5,7 @@ import {
   HeroText,
   HeroTitle,
   HeroWrapper,
+  OptionWrapper,
   Right,
   SlideInner,
   SlideWrapper,
@@ -23,6 +24,7 @@ import { useState } from "react";
 
 import rightArrow from "../../assets/icons/right_arrow.svg";
 import lefttArrow from "../../assets/icons/left_arrow.svg";
+import { Option } from "../option";
 
 export const Hero = () => {
   let [offset, setOffset] = useState(0);
@@ -70,6 +72,9 @@ export const Hero = () => {
             <HeroPrice>$5,250/mo</HeroPrice>
             <HeroButton>Read more</HeroButton>
           </Container>
+          <OptionWrapper>
+            <Option />
+          </OptionWrapper>
         </HeroWrapper>
         <HeroWrapper className="slide" bgImg={HeroBg_2}>
           <Container>
@@ -84,6 +89,9 @@ export const Hero = () => {
             <HeroPrice>$5,250/mo</HeroPrice>
             <HeroButton>Read more</HeroButton>
           </Container>
+          <OptionWrapper>
+            <Option />
+          </OptionWrapper>
         </HeroWrapper>
         <HeroWrapper className="slide" bgImg={HeroBg_3}>
           <Container>
@@ -98,6 +106,9 @@ export const Hero = () => {
             <HeroPrice>$5,250/mo</HeroPrice>
             <HeroButton>Read more</HeroButton>
           </Container>
+          <OptionWrapper>
+            <Option />
+          </OptionWrapper>
         </HeroWrapper>
       </SlideInner>
       <Right onClick={prevBtn} left>

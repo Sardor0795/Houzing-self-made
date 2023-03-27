@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const SlideWrapper = styled.div`
   position: relative;
-  overflow: hidden;
 `;
 
 export const SlideInner = styled.div`
@@ -147,6 +146,13 @@ export const Right = styled.button`
   @media (max-width: 600px) {
     left: ${({ left }) => (left ? "50px" : "unset")};
     right: ${({ right }) => (right ? "50px" : "unset")};
-    top: 80%;
+    top: 55%;
+  }
+`;
+
+export const OptionWrapper = styled.div`
+  display: none;
+  @media (max-width: 760px) {
+    display: block;
   }
 `;
