@@ -29,6 +29,10 @@ export const HeroWrapper = styled.div`
     left: 0;
     background-color: #000000a6;
   }
+  @media (max-width: 760px) {
+    padding-top: 127px;
+    padding-bottom: 62px;
+  }
   @media (max-width: 600px) {
     padding-top: 160px;
     padding-bottom: 20px;

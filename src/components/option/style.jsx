@@ -31,7 +31,7 @@ export const OptionMenu = styled.div`
     flex-wrap: wrap;
     padding: 20px;
     border-radius: 4px;
-    margin-top: 80px;
+    margin-top: 126px;
   }
 `;
 
@@ -101,7 +101,7 @@ export const AdvancedMenu = styled.form`
   opacity: ${({ opacity }) => opacity};
   z-index: ${({ z_index }) => z_index};
   @media (max-width: 760px) {
-    top: 120%;
+    top: 130%;
     border: 1px solid #e6e9ec;
   }
 `;
