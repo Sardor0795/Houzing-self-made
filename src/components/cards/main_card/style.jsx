@@ -37,10 +37,7 @@ export const MainCardTop = styled.div`
   height: 220px;
   padding: 20px;
   background-image: url("${({ bgImg }) => bgImg}");
-  /* position: relative; */
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  position: relative;
 `;
 
 export const Badge = styled.span`
@@ -50,9 +47,9 @@ export const Badge = styled.span`
   color: #ffffff;
   text-transform: uppercase;
   padding: 5px 12px;
-  /* position: absolute; */
-  /* right: ${({ type }) => (type === "sale" ? "20px" : "unset")};
-  left: ${({ type }) => (type === "feature" ? "20px" : "unset")}; */
+  position: absolute;
+  right: ${({ type }) => (type === "sale" ? "20px" : "unset")};
+  left: ${({ type }) => (type === "feature" ? "20px" : "unset")};
   border-radius: 3px;
   background-color: ${({ type }) =>
     type === "feature" ? "#0061DF" : "#0D263B"};
@@ -64,11 +61,10 @@ export const MainCardUserImg = styled.span`
   border: 2px solid #fff;
   border-radius: 50%;
   background-image: url("${({ userImg }) => userImg}");
-  display: none;
   ${common}
-  /* position: absolute;
+  position: absolute;
   bottom: -20px;
-  right: 20px; */
+  right: 20px;
 `;
 
 export const MainCardCenter = styled.div`
