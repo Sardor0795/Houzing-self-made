@@ -111,6 +111,7 @@ export const UpButton = styled.button`
   transition: opacity 0.3s ease;
   opacity: 0;
   right: 15px;
+  z-index: 5;
   pointer-events: none;
   .show& {
     display: flex;
