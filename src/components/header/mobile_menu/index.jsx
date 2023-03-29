@@ -16,9 +16,9 @@ import {
   SocialsList,
 } from "../../footer/footer__top/style";
 
-export const MobileMenu = ({ menu }) => (
+export const MobileMenu = ({ menu, setMobileMenu }) => (
   <MobileMenuWrapper menu={menu}>
-    <CloseButton></CloseButton>
+    <CloseButton onClick={() => setMobileMenu()}></CloseButton>
     <MenuList>
       <MenuItem>
         <MenuLink>Home</MenuLink>

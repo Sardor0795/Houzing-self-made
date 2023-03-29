@@ -28,7 +28,6 @@ export const Header = () => {
           <BurgerButton
             onClick={openerMobileMenu}
             icon={BurgerButtonIcon}
-            bgImg={openMobileMenu}
           ></BurgerButton>
           <LogoIconStyle href="!#">
             <img src={LogoIcon} alt="logo" />
@@ -50,7 +49,7 @@ export const Header = () => {
           </LoginButtonStyle>
         </HeaderContent>
       </Container>
-      <MobileMenu menu={openMobileMenu} />
+      <MobileMenu setMobileMenu={setOpenMobileMenu} menu={openMobileMenu} />
     </HeaderWrapper>
   );
 };
