@@ -26,7 +26,7 @@ export const Option = () => {
     setAdvancedBtn({
       opacity: advancedBtn.opacity === "0" ? "1" : "0",
       pointer_events: advancedBtn.pointer_events === "none" ? "all" : "none",
-      z_index: advancedBtn.z_index === -99 ? "3" : -99,
+      z_index: advancedBtn.z_index === -99 ? "10" : -99,
     });
   };
 
